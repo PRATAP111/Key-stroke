@@ -1,0 +1,70 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/ass/img/drum-kit.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row; /* Align items vertically */
+    align-items: center;  /*  Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh;  /* with out height it sticks to top off screen */
+    width: 100%;
+}
+
+.semi_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.item {
+    font-family: "ClashDisplay-Semibold";
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px; 
+    padding: 0px 30px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    font-size: 5em;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    width: 8rem;
+
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 5px 0px; */
+    transition: all ease-in-out 0.5s;
+}
+.item_active{
+    
+    border: #c97460 2px solid;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.5s;
+
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(158,155,158,0.78);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(158,155,158,0.78);
+    box-shadow: 1px 1px 5px 0px rgba(158,155,158,0.78);
+}
+.item .sub_text{
+    font-family:"ClashDisplay-Light";
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    color: #a65c4e;
+}
